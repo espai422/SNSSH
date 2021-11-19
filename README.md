@@ -2,18 +2,27 @@
 A very basic SSH implementation in python
 
 **Dont try to execute commands as nano or vim**
+# RSA_Sockets
+Basic comunication between two sockets with RSA encryptation for the messages
 
-# Usage
-### Server
-First, you need to start the server and specify an IP address and a port as a parameter
+## Dependences
+
+There is only one python library
 ```
-cd SNSSH/src/server
-python server.py 127.0.0.1 5050
+pip install pycryptodome
 ```
 
-### Client
-You need to do the same but chaging server.py by client.py
+if you have installed **pycrypto**, you should uninstall it.
 ```
-cd SNSSH/src/client
-python client.py 127.0.0.1 5050
+pip uninstall pycrypto
+```
+
+## Set-Up
+
+you will nes to start the server and the client with two positional arguments both must have the same arguments. This arguments are the IP addr and the port. The IP must be the IP addr of the server computer. The port can be any free port. Here you have an example.
+
+```bash
+python Server.py 192.168.1.75 5050
+
+python Client.py 192.168.1.75 5050
 ```
