@@ -1,5 +1,5 @@
 # SNSSH
-A very basic SSH implementation in python
+A very basic SSH copy in python
 
 **Dont try to execute commands as nano or vim**
 # RSA_Sockets
